@@ -9,8 +9,8 @@ namespace crud.KhachHangs
 {
     public interface IKhachHangAppService : IDomainService
     {
-        IEnumerable<KhachHang> GetAllList();
-        KhachHang GetKhachHangByUserName(string userName);
+        Task<IEnumerable<KhachHang>> GetAllList();
+        Task<KhachHang> GetKhachHangByUserName(string userName);
         Task<KhachHang> Create(KhachHang kh);
         void Update(KhachHang kh);
         void Delete(string  userName);

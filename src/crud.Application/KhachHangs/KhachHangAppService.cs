@@ -33,24 +33,26 @@ namespace crud.KhachHangs
             }
         }
 
-        public void Delete(string userName)
+        public async void Delete(string userName)
         {
-            throw new NotImplementedException();
+            var khachHang = await _repository.FirstOrDefaultAsync(o => o.Id == userName);
+            if (khachHang == null) throw new UserFriendlyException("Can not find UserName");
+            _repository.Delete(khachHang);
         }
 
-        public IEnumerable<KhachHang> GetAllList()
+        public async Task<IEnumerable<KhachHang>> GetAllList()
         {
-            throw new NotImplementedException();
+            return await _repository.GetAllListAsync();
         }
 
-        public KhachHang GetKhachHangByUserName(string userName)
+        public async Task<KhachHang> GetKhachHangByUserName(string userName)
         {
-            throw new NotImplementedException();
+            return await _repository.GetAsync(userName);
         }
 
         public void Update(KhachHang kh)
         {
-            throw new NotImplementedException();
+             _repository.UpdateAsync(kh);
         }
     }
 }
