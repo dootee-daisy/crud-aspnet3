@@ -1,5 +1,5 @@
 ﻿using Abp.Application.Services;
-using Abp.Domain.Services;
+using crud.KhachHangs.DTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace crud.KhachHangs
 {
-    public interface IKhachHangAppService : IDomainService
+    public interface IKhachHangAppService : IApplicationService
     {
-        Task<IEnumerable<KhachHang>> GetAllList();
-        Task<KhachHang> GetKhachHangByUserName(string userName);
-        Task<KhachHang> Create(KhachHang kh);
-        void Update(KhachHang kh);
-        void Delete(string  userName);
+        Task <GetKhachHangOutput> GetKhachHangByUserName(GetKhachHangInput input);
+        Task<IEnumerable<GetKhachHangOutput>> GetAllList();
+        Task Create(CreateKhachHangInput input);
+        void Update(UpdateKhachHangInput input);
+        void Delete(DeleteKhachHangInput input);
     }
 }

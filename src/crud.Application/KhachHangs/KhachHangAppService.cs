@@ -1,58 +1,55 @@
 ﻿using Abp.Application.Services;
-using Abp.Domain.Repositories;
-using Abp.UI;
+using AutoMapper;
+using crud.KhachHangs.DTO;
 using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace crud.KhachHangs
 {
-    public class KhachHangAppService : CrudAppService<KhachHang, KhachHangDto, string>, IKhachHangAppService
+    public class KhachHangAppservice : ApplicationService, IKhachHangAppService
     {
-        public readonly IRepository<KhachHang, string> _repository;
-        public KhachHangAppService(IRepository<KhachHang, string> repository) : base(repository)
+        private readonly IKhachHangManager _khachHangManager;
+        private readonly IMapper _mapper;
+        public KhachHangAppservice(IKhachHangManager khachHangManager, IMapper mapper)
         {
-            _repository = repository;
+            _khachHangManager = khachHangManager;
+            _mapper = mapper;
+
+        }
+        public async Task Create(CreateKhachHangInput input)
+        {
+            KhachHang kh = _mapper.Map<CreateKhachHangInput, KhachHang>(input);
+            await _khachHangManager.Create(kh);
         }
 
-        public async Task<KhachHang> Create(KhachHang kh)
+        public void Delete(DeleteKhachHangInput input)
         {
-            var khachHang = await _repository.FirstOrDefaultAsync(o => o.Id == kh.Id);
-            if (khachHang != null) throw new UserFriendlyException("Already exist UserName");
-            else
-            {
-                try
-                {
-                    return await _repository.InsertAsync(khachHang);
-                }catch(Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
-            }
+             _khachHangManager.Delete(input.UserName);
         }
 
-        public async void Delete(string userName)
+        public async Task<IEnumerable<GetKhachHangOutput>> GetAllList()
         {
-            var khachHang = await _repository.FirstOrDefaultAsync(o => o.Id == userName);
-            if (khachHang == null) throw new UserFriendlyException("Can not find UserName");
-            _repository.Delete(khachHang);
+            var getAll = (await _khachHangManager.GetAllList()).ToList();
+            List<GetKhachHangOutput> output = _mapper.Map<List<KhachHang>, List<GetKhachHangOutput>>(getAll);
+            return output;
+        }   
+
+        public async Task<GetKhachHangOutput> GetKhachHangByUserName(GetKhachHangInput input)
+        {
+            var getKhachHang = await _khachHangManager.GetKhachHangByUserName(input.UserName);
+            GetKhachHangOutput output = _mapper.Map<KhachHang, GetKhachHangOutput>(getKhachHang);
+            return output;
         }
 
-        public async Task<IEnumerable<KhachHang>> GetAllList()
+        public void Update(UpdateKhachHangInput input)
         {
-            return await _repository.GetAllListAsync();
+            KhachHang output = _mapper.Map<UpdateKhachHangInput, KhachHang>(input);
+            _khachHangManager.Update(output);
         }
 
-        public async Task<KhachHang> GetKhachHangByUserName(string userName)
-        {
-            return await _repository.GetAsync(userName);
-        }
-
-        public void Update(KhachHang kh)
-        {
-             _repository.UpdateAsync(kh);
-        }
+        
     }
 }

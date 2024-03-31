@@ -1,0 +1,1093 @@
+DEBUG 2024-03-31 22:30:57,086 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 22:31:00,159 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 22:31:00,171 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,185 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,185 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,186 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,186 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,186 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,187 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,187 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,187 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,189 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:00,192 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 22:31:00,628 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:31:00,628 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:31:00,628 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:31:00,628 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:31:01,497 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:31:02,568 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 22:31:02,633 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 22:31:02,651 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 22:31:02,656 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 22:31:02,661 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 22:31:02,896 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 22:31:03,031 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 22:31:03,113 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 22:31:03,113 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 22:31:03,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 22:31:03,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 22:31:08,170 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 22:31:09,515 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 22:31:09,662 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 22:31:10,391 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:31:14,301 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 22:31:15,581 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 22:31:15,593 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1282.4542ms
+INFO  2024-03-31 22:31:15,595 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:31:15,618 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5957.3964ms 302 
+INFO  2024-03-31 22:31:15,620 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2024-03-31 22:31:15,672 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 53.257ms 301 
+INFO  2024-03-31 22:31:15,676 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:31:15,737 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.2463ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:31:15,762 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2024-03-31 22:31:15,763 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:31:15,765 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2024-03-31 22:31:15,768 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2024-03-31 22:31:15,771 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2024-03-31 22:31:15,773 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2024-03-31 22:31:15,782 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.1858ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:31:15,824 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2024-03-31 22:31:15,824 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2024-03-31 22:31:15,824 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2024-03-31 22:31:15,876 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:31:15,914 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 153.2054ms 200 text/css
+INFO  2024-03-31 22:31:15,916 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 149.0889ms 200 application/javascript
+INFO  2024-03-31 22:31:15,918 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 150.322ms 200 application/javascript
+INFO  2024-03-31 22:31:16,012 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\DotNetASP\crud-aspnet3\src\crud.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2024-03-31 22:31:16,018 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 251.2085ms 200 application/javascript
+INFO  2024-03-31 22:31:16,023 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\DotNetASP\crud-aspnet3\src\crud.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2024-03-31 22:31:16,027 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 260.9246ms 200 application/javascript
+INFO  2024-03-31 22:31:16,157 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 280.6245ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:31:16,216 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:31:16,223 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:31:16,233 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:31:16,263 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 22:31:16,281 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 22:31:16,364 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2024-03-31 22:31:16,376 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2024-03-31 22:31:16,384 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.4605ms 200 image/png
+INFO  2024-03-31 22:31:16,569 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 332.1844ms
+INFO  2024-03-31 22:31:16,573 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:31:16,576 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 359.9731ms 200 application/json; charset=utf-8
+ERROR 2024-03-31 22:31:16,607 [16   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18158513715543015425", Request ID "40000003-0004-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:31:16,614 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 350.1148ms 500 
+INFO  2024-03-31 22:33:58,636 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:33:58,650 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.0358ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:33:58,692 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:33:58,695 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.8771ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:33:58,705 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:33:58,733 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.4696ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:33:58,822 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:33:58,828 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:33:58,843 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:33:58,846 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+ERROR 2024-03-31 22:33:58,867 [32   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628886439002114", Request ID "40000003-0000-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:33:58,878 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.9735ms 500 
+INFO  2024-03-31 22:33:58,892 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 22:33:58,896 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 50.3248ms
+INFO  2024-03-31 22:33:58,899 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:33:58,903 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 82.7966ms 200 application/json; charset=utf-8
+INFO  2024-03-31 22:33:59,682 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:33:59,693 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.9559ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:33:59,719 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:33:59,720 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:33:59,728 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.2085ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:33:59,740 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.6034ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:33:59,775 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:33:59,780 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:33:59,791 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:33:59,793 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+ERROR 2024-03-31 22:33:59,841 [34   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628886439002114", Request ID "40000005-0000-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:33:59,845 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.7039ms 500 
+INFO  2024-03-31 22:33:59,855 [33   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 22:33:59,860 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 64.5789ms
+INFO  2024-03-31 22:33:59,863 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:33:59,867 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 90.888ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 22:34:33,315 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 22:34:33,556 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 22:34:33,573 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,574 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:33,579 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 22:34:34,190 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:34:34,190 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:34:34,190 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:34:34,190 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:34:35,078 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:34:36,231 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 22:34:36,266 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 22:34:36,283 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 22:34:36,299 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 22:34:36,310 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 22:34:36,538 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 22:34:36,683 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 22:34:36,733 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 22:34:36,733 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 22:34:36,739 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 22:34:36,739 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 22:34:36,739 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 22:34:36,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 22:34:36,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 22:34:36,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 22:34:36,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 22:34:36,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 22:34:40,047 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 22:34:41,167 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 22:34:41,235 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 22:34:41,891 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:34:46,078 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 22:34:47,350 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 22:34:47,357 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1273.6085ms
+INFO  2024-03-31 22:34:47,359 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:34:47,384 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6147.9639ms 302 
+INFO  2024-03-31 22:34:47,387 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:34:47,463 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 75.4196ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:34:47,482 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:34:47,490 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.1317ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:34:47,557 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:34:47,639 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.0763ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:34:47,674 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:34:47,681 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:34:47,690 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:34:47,695 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 22:34:47,722 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 22:34:47,900 [16   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628907913838599", Request ID "40000009-0005-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:34:47,931 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 209.8162ms 500 
+INFO  2024-03-31 22:34:47,957 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 264.8909ms
+INFO  2024-03-31 22:34:47,960 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:34:47,963 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 288.0259ms 200 application/json; charset=utf-8
+INFO  2024-03-31 22:37:53,405 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-03-31 22:37:53,406 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-03-31 22:37:53,421 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css.map  
+INFO  2024-03-31 22:37:53,426 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.6928ms 404 
+INFO  2024-03-31 22:37:53,427 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.865ms 404 
+INFO  2024-03-31 22:37:53,465 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.4613ms 404 
+INFO  2024-03-31 22:38:06,579 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:38:06,603 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.4095ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:38:06,640 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:38:06,642 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:38:06,644 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.8213ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:38:06,673 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.5104ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:38:06,777 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css.map  
+INFO  2024-03-31 22:38:06,782 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.1081ms 404 
+INFO  2024-03-31 22:38:06,941 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-03-31 22:38:06,956 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.2159ms 404 
+INFO  2024-03-31 22:38:07,017 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-03-31 22:38:07,023 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.7619ms 404 
+INFO  2024-03-31 22:38:07,069 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:38:07,075 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:38:07,081 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:38:07,090 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+ERROR 2024-03-31 22:38:07,110 [30   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628916503773186", Request ID "40000003-0007-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:38:07,115 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 22:38:07,122 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27.4653ms 500 
+INFO  2024-03-31 22:38:07,128 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 41.1674ms
+INFO  2024-03-31 22:38:07,133 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:38:07,140 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.4845ms 200 application/json; charset=utf-8
+INFO  2024-03-31 22:38:11,186 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+ERROR 2024-03-31 22:38:11,201 [34   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18374686510541701125", Request ID "40000007-0007-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:38:11,206 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.0531ms 500 
+DEBUG 2024-03-31 22:57:00,888 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 22:57:01,892 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 22:57:01,905 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,906 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,909 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,909 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:01,910 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 22:57:02,317 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:57:02,317 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:57:02,318 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:57:02,318 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 22:57:03,118 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 22:57:04,076 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 22:57:04,116 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 22:57:04,126 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 22:57:04,131 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 22:57:04,136 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 22:57:04,342 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 22:57:04,485 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 22:57:04,527 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 22:57:04,527 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 22:57:04,533 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 22:57:04,534 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 22:57:04,534 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 22:57:04,534 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 22:57:04,534 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 22:57:04,535 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 22:57:04,535 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 22:57:04,535 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 22:57:07,548 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 22:57:08,541 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 22:57:08,602 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 22:57:09,281 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:57:12,856 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 22:57:14,064 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 22:57:14,073 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1210.0181ms
+INFO  2024-03-31 22:57:14,077 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 22:57:14,095 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5494.2343ms 302 
+INFO  2024-03-31 22:57:14,104 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 22:57:14,192 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 91.4569ms 200 text/html;charset=utf-8
+INFO  2024-03-31 22:57:14,222 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 22:57:14,231 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.372ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 22:57:14,297 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 22:57:14,357 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 60.3101ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 22:57:14,393 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 22:57:14,399 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:57:14,407 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 22:57:14,414 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 22:57:14,453 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 22:57:14,593 [13   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18086456121505087497", Request ID "4000000b-0004-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 22:57:14,597 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 183.8136ms 500 
+INFO  2024-03-31 22:57:14,632 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 223.3326ms
+INFO  2024-03-31 22:57:14,634 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 22:57:14,636 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 243.5708ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:05:00,140 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:05:01,170 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:05:01,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:01,186 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:05:01,626 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:05:01,627 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:05:01,627 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:05:01,627 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:05:02,451 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:05:03,574 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:05:03,609 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:05:03,619 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:05:03,624 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:05:03,631 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:05:03,849 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:05:03,974 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:05:04,026 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:05:04,026 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:05:04,032 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:05:04,033 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:05:07,162 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:05:08,125 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:05:08,183 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:05:08,824 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:05:12,175 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:05:13,299 [15   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:05:13,305 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1125.6847ms
+INFO  2024-03-31 23:05:13,308 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:05:13,326 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5143.0778ms 302 
+INFO  2024-03-31 23:05:13,328 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:05:13,397 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.6569ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:05:13,430 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:05:13,440 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.7125ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:05:13,495 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:05:13,575 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 78.3698ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:05:13,608 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:05:13,614 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:05:13,621 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:05:13,626 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:05:13,646 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:05:13,776 [13   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18086456125800054785", Request ID "40000003-0005-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:05:13,780 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 153.531ms 500 
+INFO  2024-03-31 23:05:13,811 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 187.5103ms
+INFO  2024-03-31 23:05:13,813 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:05:13,815 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 206.6015ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:10:32,469 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:10:32,534 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:10:32,545 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,546 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,549 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,549 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,549 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:32,551 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:10:32,610 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:10:32,610 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:10:32,610 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:10:32,610 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:10:33,101 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:10:34,204 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:10:34,255 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:10:34,265 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:10:34,270 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:10:34,275 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:10:34,536 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:10:34,687 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:10:34,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:10:34,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:10:34,741 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:10:34,741 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:10:34,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:10:37,076 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:10:37,314 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:10:37,373 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:10:37,594 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:10:41,119 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:10:42,431 [9    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:10:42,439 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1314.2109ms
+INFO  2024-03-31 23:10:42,441 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:10:42,459 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5087.487ms 302 
+INFO  2024-03-31 23:10:42,462 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:10:42,536 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 74.3902ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:10:42,563 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:10:42,573 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.4229ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:10:42,641 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:10:42,706 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.0482ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:10:42,744 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:10:42,760 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:10:42,770 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:10:42,772 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:10:42,821 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:10:42,970 [16   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18374686497656799238", Request ID "40000008-0004-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:10:42,975 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 201.7477ms 500 
+INFO  2024-03-31 23:10:43,035 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 262.6538ms
+INFO  2024-03-31 23:10:43,037 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:10:43,040 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 295.2646ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:20:09,927 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:20:10,018 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:20:10,033 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,037 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,037 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,037 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:10,041 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:20:10,106 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:20:10,107 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:20:10,107 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:20:10,107 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:20:10,493 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:20:11,446 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:20:11,484 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:20:11,505 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:20:11,511 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:20:11,518 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:20:11,752 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:20:11,882 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:20:11,927 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:20:11,927 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:20:11,932 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:20:11,932 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:20:11,932 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:20:11,933 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:20:11,933 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:20:11,933 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:20:11,933 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:20:11,933 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:20:14,508 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:20:14,814 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:20:14,884 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:20:15,113 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:20:19,459 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:20:20,774 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:20:20,782 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1316.2865ms
+INFO  2024-03-31 23:20:20,785 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:20:20,805 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5922.1128ms 302 
+INFO  2024-03-31 23:20:20,807 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:20:20,890 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 82.1358ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:20:20,914 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:20:20,921 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.2647ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:20:20,979 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:20:21,036 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.1058ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:20:21,092 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:20:21,101 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:20:21,119 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:20:21,125 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:20:21,203 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 23:20:21,356 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 233.6533ms
+INFO  2024-03-31 23:20:21,358 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:20:21,360 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 269.8547ms 200 application/json; charset=utf-8
+INFO  2024-03-31 23:20:21,382 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 257.8021ms 200 application/json;charset=utf-8
+DEBUG 2024-03-31 23:26:30,073 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:26:30,160 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:26:30,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:30,178 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:26:30,245 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:26:30,245 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:26:30,245 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:26:30,245 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:26:30,588 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:26:31,596 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:26:31,627 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:26:31,639 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:26:31,645 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:26:31,651 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:26:31,918 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:26:32,090 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:26:32,146 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:26:32,146 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:26:32,152 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:26:32,153 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:26:32,153 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:26:32,153 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:26:32,153 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:26:32,153 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:26:32,154 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:26:32,154 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:26:34,530 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:26:34,796 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:26:34,868 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:26:35,079 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:26:38,800 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:26:40,012 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:26:40,020 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1214.2381ms
+INFO  2024-03-31 23:26:40,023 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:26:40,047 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5180.3152ms 302 
+INFO  2024-03-31 23:26:40,049 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:26:40,131 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.7032ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:26:40,161 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:26:40,169 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.5581ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:26:40,238 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:26:40,319 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 76.8651ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:26:40,366 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:26:40,371 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:26:40,382 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:26:40,386 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:26:40,434 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:26:40,593 [11   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18014398527467159557", Request ID "40000007-0004-fa00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:26:40,596 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 210.1627ms 500 
+INFO  2024-03-31 23:26:40,627 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 242.0519ms
+INFO  2024-03-31 23:26:40,628 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:26:40,630 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 265.0566ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:35:28,880 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:35:28,962 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:35:28,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:28,982 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:35:29,051 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:35:29,051 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:35:29,051 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:35:29,051 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:35:29,409 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:35:30,288 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:35:30,318 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:35:30,330 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:35:30,335 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:35:30,344 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:35:30,537 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:35:30,676 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:35:30,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:35:30,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:35:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:35:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:35:30,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:35:30,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:35:30,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:35:30,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:35:30,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:35:30,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:35:32,865 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:35:33,111 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:35:33,176 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:35:33,363 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:35:36,567 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:35:37,891 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:35:37,900 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1326.1686ms
+INFO  2024-03-31 23:35:37,903 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:35:37,927 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4750.9196ms 302 
+INFO  2024-03-31 23:35:37,929 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:35:38,048 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 117.821ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:35:38,080 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:35:38,087 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.9027ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:35:38,156 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:35:38,214 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.5796ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:35:38,359 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:35:38,366 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:35:38,376 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:35:38,403 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:35:38,438 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-03-31 23:35:38,579 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 200.7128ms
+INFO  2024-03-31 23:35:38,581 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:35:38,582 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 224.6589ms 200 application/json; charset=utf-8
+INFO  2024-03-31 23:35:38,591 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 191.3573ms 200 application/json;charset=utf-8
+DEBUG 2024-03-31 23:36:17,160 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:36:17,234 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:36:17,247 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,249 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,249 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,253 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:17,255 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:36:17,316 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:36:17,316 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:36:17,316 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:36:17,316 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:36:17,670 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:36:18,562 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:36:18,601 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:36:18,620 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:36:18,626 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:36:18,632 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:36:18,866 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:36:19,000 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:36:19,052 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:36:19,052 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:36:19,056 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:36:19,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:36:19,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:36:19,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:36:19,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:36:19,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:36:19,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:36:19,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:36:21,249 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:36:21,498 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:36:21,576 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:36:21,769 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:36:25,314 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:36:26,610 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:36:26,618 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1297.7148ms
+INFO  2024-03-31 23:36:26,620 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:36:26,638 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5062.6706ms 302 
+INFO  2024-03-31 23:36:26,641 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:36:26,722 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.3852ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:36:26,750 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:36:26,757 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.0657ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:36:26,812 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:36:26,874 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 61.8232ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:36:26,991 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:36:26,998 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:36:27,007 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:36:27,026 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:36:27,060 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:36:27,219 [9    ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628907913838608", Request ID "40000012-0005-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:36:27,223 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 198.8733ms 500 
+INFO  2024-03-31 23:36:27,240 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 230.4572ms
+INFO  2024-03-31 23:36:27,243 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:36:27,246 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 254.2365ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:37:24,949 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:37:25,037 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:37:25,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,054 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,055 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:25,059 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:37:25,126 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:37:25,126 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:37:25,126 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:37:25,126 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:37:25,486 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:37:26,369 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:37:26,405 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:37:26,419 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:37:26,426 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:37:26,431 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:37:26,657 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:37:26,791 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:37:26,842 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:37:26,842 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:37:26,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:37:26,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:37:26,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:37:26,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:37:26,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:37:26,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:37:26,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:37:26,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:37:29,237 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:37:29,511 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:37:29,581 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:37:29,800 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:37:33,467 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:37:34,706 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:37:34,714 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1239.8962ms
+INFO  2024-03-31 23:37:34,716 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:37:34,738 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5156.7462ms 302 
+INFO  2024-03-31 23:37:34,740 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:37:34,833 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 91.7226ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:37:34,856 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:37:34,864 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.19ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:37:34,922 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:37:34,978 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.0617ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:37:35,022 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:37:35,035 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:37:35,051 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:37:35,064 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:37:35,120 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:37:35,240 [13   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628907913838611", Request ID "40000015-0005-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:37:35,246 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 181.5438ms 500 
+INFO  2024-03-31 23:37:35,280 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 225.5581ms
+INFO  2024-03-31 23:37:35,282 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:37:35,285 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 263.6933ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:39:21,390 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:39:21,493 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:39:21,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:21,513 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:39:21,570 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:39:21,571 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:39:21,571 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:39:21,571 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:39:21,904 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:39:22,760 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:39:22,792 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:39:22,805 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:39:22,814 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:39:22,820 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:39:23,039 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:39:23,172 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:39:23,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:39:23,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:39:23,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:39:23,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:39:23,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:39:25,567 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:39:25,821 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:39:25,882 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:39:26,087 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:39:29,645 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:39:30,813 [10   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:39:30,819 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1169.4448ms
+INFO  2024-03-31 23:39:30,822 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:39:30,840 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4958.0725ms 302 
+INFO  2024-03-31 23:39:30,842 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:39:30,918 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 74.8073ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:39:30,938 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:39:30,947 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.1631ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:39:31,007 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:39:31,067 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 60.7377ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:39:31,104 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:39:31,109 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:39:31,121 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:39:31,144 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:39:31,166 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:39:31,325 [15   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628907913838614", Request ID "40000018-0005-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "DELETE api/services/app/KhachHang/Delete" for actions - crud.KhachHangs.KhachHangAppService.Delete (crud.Application),crud.KhachHangs.KhachHangAppService.Delete (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:39:31,330 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 185.5211ms 500 
+INFO  2024-03-31 23:39:31,357 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 232.2564ms
+INFO  2024-03-31 23:39:31,359 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:39:31,361 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 256.8084ms 200 application/json; charset=utf-8
+DEBUG 2024-03-31 23:53:09,688 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-03-31 23:53:09,763 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-03-31 23:53:09,774 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,775 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,775 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,775 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,777 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,777 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,777 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,777 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,778 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,778 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,778 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:09,780 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-03-31 23:53:09,839 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:53:09,839 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:53:09,839 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:53:09,839 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-03-31 23:53:10,169 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-03-31 23:53:10,967 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-03-31 23:53:10,996 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-03-31 23:53:11,007 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-03-31 23:53:11,013 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-03-31 23:53:11,018 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-03-31 23:53:11,202 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-03-31 23:53:11,332 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-03-31 23:53:11,376 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-03-31 23:53:11,376 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-03-31 23:53:11,382 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-03-31 23:53:11,383 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-03-31 23:53:11,383 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-03-31 23:53:11,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-03-31 23:53:11,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-03-31 23:53:11,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-03-31 23:53:11,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-03-31 23:53:11,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-03-31 23:53:13,748 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-03-31 23:53:14,004 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-03-31 23:53:14,062 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-03-31 23:53:14,253 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:53:17,666 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-03-31 23:53:18,859 [16   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-03-31 23:53:18,865 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1194.5368ms
+INFO  2024-03-31 23:53:18,867 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-03-31 23:53:18,889 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4826.8761ms 302 
+INFO  2024-03-31 23:53:18,891 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-03-31 23:53:18,962 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 69.5385ms 200 text/html;charset=utf-8
+INFO  2024-03-31 23:53:19,025 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-03-31 23:53:19,032 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.4296ms 200 application/javascript; charset=utf-8
+INFO  2024-03-31 23:53:19,081 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-03-31 23:53:19,147 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.749ms 200 text/javascript; charset=UTF-8
+INFO  2024-03-31 23:53:19,193 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-03-31 23:53:19,201 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:53:19,214 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-03-31 23:53:19,236 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-03-31 23:53:19,258 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+ERROR 2024-03-31 23:53:19,402 [16   ] AspNetCore.Server.IIS.Core.IISHttpServer - Connection ID "18302628907913838617", Request ID "4000001b-0005-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "POST api/services/app/KhachHang/Create" for actions - crud.KhachHangs.KhachHangAppService.Create (crud.Application),crud.KhachHangs.KhachHangAppService.Create (crud.Application). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+INFO  2024-03-31 23:53:19,406 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 170.4601ms 500 
+INFO  2024-03-31 23:53:19,421 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 202.2423ms
+INFO  2024-03-31 23:53:19,424 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-03-31 23:53:19,427 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 235.8742ms 200 application/json; charset=utf-8
+DEBUG 2024-04-01 00:04:42,618 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-04-01 00:04:42,708 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-04-01 00:04:42,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,735 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,735 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,736 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,736 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,736 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,737 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,738 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:42,746 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-04-01 00:04:42,825 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-01 00:04:42,825 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-01 00:04:42,825 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-01 00:04:42,825 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-01 00:04:43,219 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-01 00:04:44,270 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-04-01 00:04:44,300 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-04-01 00:04:44,317 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-04-01 00:04:44,323 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-04-01 00:04:44,329 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-04-01 00:04:44,561 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-04-01 00:04:44,692 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-04-01 00:04:44,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-04-01 00:04:44,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-04-01 00:04:44,747 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-04-01 00:04:44,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-04-01 00:04:47,081 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-04-01 00:04:47,342 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-04-01 00:04:47,408 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-04-01 00:04:47,628 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-01 00:04:51,214 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-04-01 00:04:52,469 [14   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-04-01 00:04:52,476 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1255.8851ms
+INFO  2024-04-01 00:04:52,479 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-01 00:04:52,497 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5089.6612ms 302 
+INFO  2024-04-01 00:04:52,502 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-01 00:04:52,583 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.171ms 200 text/html;charset=utf-8
+INFO  2024-04-01 00:04:52,606 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-01 00:04:52,613 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.1609ms 200 application/javascript; charset=utf-8
+INFO  2024-04-01 00:04:52,674 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-01 00:04:52,736 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 60.5842ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-01 00:04:52,775 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-01 00:04:52,782 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-01 00:04:52,793 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-01 00:04:52,813 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-01 00:04:52,833 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-01 00:04:53,019 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 222.0664ms
+INFO  2024-04-01 00:04:53,022 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-01 00:04:53,024 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 249.1552ms 200 application/json; charset=utf-8
+INFO  2024-04-01 00:04:53,027 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 213.3318ms 200 application/json;charset=utf-8
