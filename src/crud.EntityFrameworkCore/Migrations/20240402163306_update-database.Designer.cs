@@ -10,8 +10,8 @@ using crud.EntityFrameworkCore;
 namespace crud.Migrations
 {
     [DbContext(typeof(crudDbContext))]
-    [Migration("20240329102939_init khachhang")]
-    partial class initkhachhang
+    [Migration("20240402163306_update-database")]
+    partial class updatedatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1512,6 +1512,39 @@ namespace crud.Migrations
                     b.HasIndex("TenantId", "NormalizedUserName");
 
                     b.ToTable("AbpUsers");
+                });
+
+            modelBuilder.Entity("crud.KhachHangs.KhachHang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("CreatorUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("LastModifierUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("KhachHangs");
                 });
 
             modelBuilder.Entity("crud.MultiTenancy.Tenant", b =>

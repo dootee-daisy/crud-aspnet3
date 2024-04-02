@@ -1514,12 +1514,13 @@ namespace crud.Migrations
 
             modelBuilder.Entity("crud.KhachHangs.KhachHang", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnName("USERNAME")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Age")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -1535,6 +1536,9 @@ namespace crud.Migrations
 
                     b.Property<long?>("LastModifierUserId")
                         .HasColumnType("bigint");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

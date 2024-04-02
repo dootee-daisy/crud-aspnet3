@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace crud.Migrations
 {
-    public partial class updatedb : Migration
+    public partial class updatedatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,17 +11,19 @@ namespace crud.Migrations
                 name: "KhachHangs",
                 columns: table => new
                 {
-                    USERNAME = table.Column<string>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserName = table.Column<string>(nullable: true),
                     CreationTime = table.Column<DateTime>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: true),
                     LastModificationTime = table.Column<DateTime>(nullable: true),
                     LastModifierUserId = table.Column<long>(nullable: true),
                     DisplayName = table.Column<string>(nullable: true),
-                    Age = table.Column<string>(nullable: true)
+                    Age = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_KhachHangs", x => x.USERNAME);
+                    table.PrimaryKey("PK_KhachHangs", x => x.Id);
                 });
         }
 

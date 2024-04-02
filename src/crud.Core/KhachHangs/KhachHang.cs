@@ -7,10 +7,11 @@ using System.Text;
 
 namespace crud.KhachHangs
 {
-    public class KhachHang : AuditedAggregateRoot<string>
+    public class KhachHang : AuditedAggregateRoot
     {
-        [Column("USERNAME")]
-        public override string Id { get => base.Id; set => base.Id = value; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public override int Id { get; set; }
+        public string UserName { get; set; }
         public override DateTime CreationTime { get => base.CreationTime; set => base.CreationTime = value; }
         public override long? CreatorUserId { get => base.CreatorUserId; set => base.CreatorUserId = value; }
         public override DateTime? LastModificationTime { get => base.LastModificationTime; set => base.LastModificationTime = value; }

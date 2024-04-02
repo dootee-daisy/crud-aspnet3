@@ -55,7 +55,6 @@ namespace crud.Web.Startup
             AuthConfigurer.Configure(services, _appConfiguration);
 
             services.AddScoped<IWebResourceManager, WebResourceManager>();
-            services.AddScoped<IKhachHangManager, KhachHangManager>();
 
             services.AddSignalR();
 

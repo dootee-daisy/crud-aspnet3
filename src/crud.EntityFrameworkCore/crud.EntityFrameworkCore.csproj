@@ -13,6 +13,8 @@
     <Compile Remove="Migrations\20190111071724_Upgraded_To_Abp_v4_1_0.cs" />
     <Compile Remove="Migrations\20240329104159_update khachhang.cs" />
     <Compile Remove="Migrations\20240329104159_update khachhang.Designer.cs" />
+    <Compile Remove="Migrations\20240402155734_update-database.cs" />
+    <Compile Remove="Migrations\20240402155734_update-database.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />

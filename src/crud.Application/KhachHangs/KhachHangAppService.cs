@@ -6,50 +6,69 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using Abp.Domain.Repositories;
+using Abp.UI;
+using Abp.Authorization;
+using crud.Authorization;
 
 namespace crud.KhachHangs
 {
+    [AbpAuthorize(PermissionNames.Pages_KhachHang)]
     public class KhachHangAppService : crudAppServiceBase, IKhachHangAppService
     {
-        private readonly KhachHangManager _khachHangManager;
+        private readonly IRepository<KhachHang> _khachHangRepository;
         private readonly IMapper _mapper;
-        public KhachHangAppService(KhachHangManager khachHangManager, IMapper mapper)
+        public KhachHangAppService(IMapper mapper, IRepository<KhachHang> khachHangRepository)
         {
-            _khachHangManager = khachHangManager;
             _mapper = mapper;
+            _khachHangRepository = khachHangRepository;
 
         }
-        public async Task Create(CreateKhachHangInput input)
+        public async Task<KhachHang> Create(CreateKhachHangInput input)
         {
             KhachHang kh = _mapper.Map<CreateKhachHangInput, KhachHang>(input);
-            await _khachHangManager.Create(kh);
+            var isExist = await _khachHangRepository.FirstOrDefaultAsync(o => o.UserName == kh.UserName);
+            if (isExist != null) throw new UserFriendlyException("Already exist UserName");
+            else
+            {
+                try
+                {
+                    return await _khachHangRepository.InsertAsync(kh);
+                }catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+            
         }
-
-        public void Delete(DeleteKhachHangInput input)
+        public async void Delete(DeleteKhachHangInput input)
         {
-             _khachHangManager.Delete(input.UserName);
+            var khachHang = await _khachHangRepository.FirstOrDefaultAsync(o => o.UserName == input.UserName);
+            if (khachHang == null) throw new UserFriendlyException("UserName is not exist, can't delete");
+            else await _khachHangRepository.DeleteAsync(khachHang);
         }
 
         public async Task<IEnumerable<GetKhachHangOutput>> GetAllList()
         {
-            var getAll = (await _khachHangManager.GetAllList()).ToList();
+            var getAll = await _khachHangRepository.GetAllListAsync();
             List<GetKhachHangOutput> output = _mapper.Map<List<KhachHang>, List<GetKhachHangOutput>>(getAll);
             return output;
         }   
 
         public async Task<GetKhachHangOutput> GetKhachHangByUserName(GetKhachHangInput input)
         {
-            var getKhachHang = await _khachHangManager.GetKhachHangByUserName(input.UserName);
-            GetKhachHangOutput output = _mapper.Map<KhachHang, GetKhachHangOutput>(getKhachHang);
-            return output;
+            var isExist = await _khachHangRepository.FirstOrDefaultAsync(o => o.UserName == input.UserName);
+            if (isExist == null) throw new UserFriendlyException("Can't find UserName");
+            GetKhachHangOutput khachHang = _mapper.Map<KhachHang, GetKhachHangOutput>(isExist);
+            return khachHang;
         }
 
-        public void Update(UpdateKhachHangInput input)
+        public async void Update(UpdateKhachHangInput input)
         {
             KhachHang output = _mapper.Map<UpdateKhachHangInput, KhachHang>(input);
-            _khachHangManager.Update(output);
+            await _khachHangRepository.UpdateAsync(output);
         }
 
-        
+
     }
 }
