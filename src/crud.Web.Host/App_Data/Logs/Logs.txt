@@ -1091,3 +1091,839 @@ INFO  2024-04-01 00:04:53,019 [13   ] c.Infrastructure.ControllerActionInvoker -
 INFO  2024-04-01 00:04:53,022 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
 INFO  2024-04-01 00:04:53,024 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 249.1552ms 200 application/json; charset=utf-8
 INFO  2024-04-01 00:04:53,027 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 213.3318ms 200 application/json;charset=utf-8
+DEBUG 2024-04-02 17:54:37,541 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-04-02 17:54:37,609 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-04-02 17:54:37,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:37,659 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-04-02 17:54:37,760 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:54:37,760 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:54:37,760 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:54:37,760 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:54:38,275 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:54:39,482 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-04-02 17:54:39,523 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-04-02 17:54:39,539 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-04-02 17:54:39,548 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-04-02 17:54:39,555 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-04-02 17:54:39,946 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-04-02 17:54:40,109 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-04-02 17:54:40,185 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-04-02 17:54:40,185 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-04-02 17:54:40,193 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-04-02 17:54:40,194 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-04-02 17:54:40,194 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-04-02 17:54:40,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-04-02 17:54:40,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-04-02 17:54:40,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-04-02 17:54:40,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-04-02 17:54:40,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-04-02 17:54:43,170 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-04-02 17:54:43,491 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-04-02 17:54:43,566 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-04-02 17:54:43,801 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 17:54:47,856 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-04-02 17:54:49,162 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-04-02 17:54:49,171 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1308.3233ms
+INFO  2024-04-02 17:54:49,173 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 17:54:49,192 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2024-04-02 17:54:49,196 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5631.3662ms 302 
+INFO  2024-04-02 17:54:49,233 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.2489ms 301 
+INFO  2024-04-02 17:54:49,235 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 17:54:49,297 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 61.2967ms 200 text/html;charset=utf-8
+INFO  2024-04-02 17:54:49,315 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2024-04-02 17:54:49,317 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2024-04-02 17:54:49,319 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2024-04-02 17:54:49,320 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2024-04-02 17:54:49,322 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2024-04-02 17:54:49,324 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 17:54:49,330 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.8857ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 17:54:49,333 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 17:54:49,343 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\C#\crud-aspnet3\src\crud.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2024-04-02 17:54:49,343 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\C#\crud-aspnet3\src\crud.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2024-04-02 17:54:49,345 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.0807ms 200 application/javascript
+INFO  2024-04-02 17:54:49,348 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.191ms 200 application/javascript
+INFO  2024-04-02 17:54:49,366 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2024-04-02 17:54:49,369 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 55.0187ms 200 text/css
+INFO  2024-04-02 17:54:49,373 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2024-04-02 17:54:49,375 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 57.8692ms 200 application/javascript
+INFO  2024-04-02 17:54:49,386 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2024-04-02 17:54:49,388 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 71.3296ms 200 application/javascript
+INFO  2024-04-02 17:54:49,411 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 77.8577ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 17:54:49,557 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 17:54:49,575 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.8582ms 404 
+INFO  2024-04-02 17:54:49,586 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 17:54:49,590 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.208ms 404 
+INFO  2024-04-02 17:54:49,593 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 17:54:49,597 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.3597ms 404 
+INFO  2024-04-02 17:54:49,601 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 17:54:49,603 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 17:54:49,605 [32   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:54:49,608 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.5982ms 404 
+INFO  2024-04-02 17:54:49,627 [32   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 17:54:49,644 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 17:54:49,658 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:54:49,668 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2024-04-02 17:54:49,672 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2024-04-02 17:54:49,674 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.6747ms 200 image/png
+INFO  2024-04-02 17:54:49,801 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 171.2659ms
+INFO  2024-04-02 17:54:49,804 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:54:49,806 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 204.7243ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:54:49,838 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 193.9924ms 200 application/json;charset=utf-8
+INFO  2024-04-02 17:55:04,724 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2024-04-02 17:55:04,732 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:55:04,734 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:55:04,741 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:55:04,795 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:55:05,442 [18   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:55:05,448 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 650.8389ms
+INFO  2024-04-02 17:55:05,450 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:55:05,452 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 728.7056ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:56:56,438 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2024-04-02 17:56:56,441 [18   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:56:56,442 [18   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:56:56,450 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:56:56,459 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:56:56,493 [18   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:56:56,496 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 35.069ms
+INFO  2024-04-02 17:56:56,498 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:56:56,500 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 63.4048ms 200 application/json; charset=utf-8
+DEBUG 2024-04-02 17:58:35,457 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-04-02 17:58:35,515 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-04-02 17:58:35,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,538 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:35,545 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-04-02 17:58:35,650 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:58:35,650 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:58:35,650 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:58:35,650 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 17:58:36,068 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 17:58:37,069 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-04-02 17:58:37,110 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-04-02 17:58:37,127 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-04-02 17:58:37,135 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-04-02 17:58:37,144 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-04-02 17:58:37,454 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-04-02 17:58:37,615 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-04-02 17:58:37,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-04-02 17:58:37,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-04-02 17:58:37,696 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-04-02 17:58:37,697 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-04-02 17:58:37,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-04-02 17:58:40,496 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-04-02 17:58:40,823 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-04-02 17:58:40,908 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-04-02 17:58:41,139 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 17:58:45,167 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-04-02 17:58:46,528 [18   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-04-02 17:58:46,536 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1362.8111ms
+INFO  2024-04-02 17:58:46,539 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 17:58:46,560 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 17:58:46,563 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5657.0291ms 302 
+INFO  2024-04-02 17:58:46,648 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 87.3822ms 200 text/html;charset=utf-8
+INFO  2024-04-02 17:58:46,668 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 17:58:46,672 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 17:58:46,677 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.1318ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 17:58:46,725 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.5307ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 17:58:46,837 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 17:58:46,860 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.6367ms 404 
+INFO  2024-04-02 17:58:46,869 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 17:58:46,874 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.2505ms 404 
+INFO  2024-04-02 17:58:46,888 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 17:58:46,893 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.6556ms 404 
+INFO  2024-04-02 17:58:46,895 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 17:58:46,898 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:58:46,900 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 17:58:46,903 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.9146ms 404 
+INFO  2024-04-02 17:58:46,917 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 17:58:46,938 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 17:58:46,955 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:58:47,111 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 191.0404ms
+INFO  2024-04-02 17:58:47,113 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:58:47,115 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 220.3263ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:58:47,140 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 202.3014ms 200 application/json;charset=utf-8
+INFO  2024-04-02 17:59:00,621 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2024-04-02 17:59:00,629 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:59:00,631 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:59:00,636 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:00,664 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:59:01,483 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:01,490 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 823.1394ms
+INFO  2024-04-02 17:59:01,492 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:01,494 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 874.3292ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:08,517 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2024-04-02 17:59:08,520 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:59:08,522 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:59:08,529 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:08,538 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:59:08,566 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:08,569 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 28.2461ms
+INFO  2024-04-02 17:59:08,571 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:08,573 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.432ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:16,349 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 24
+INFO  2024-04-02 17:59:16,352 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:59:16,354 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:59:16,358 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:16,368 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:59:16,404 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:16,407 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 36.68ms
+INFO  2024-04-02 17:59:16,410 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:16,412 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.5804ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:22,331 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2024-04-02 17:59:22,334 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:59:22,336 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:59:22,339 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:22,348 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(crud.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller crud.Authorization.Accounts.AccountAppService (crud.Application).
+INFO  2024-04-02 17:59:22,378 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:22,420 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application) in 69.7428ms
+INFO  2024-04-02 17:59:22,422 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Authorization.Accounts.AccountAppService.IsTenantAvailable (crud.Application)'
+INFO  2024-04-02 17:59:22,424 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 93.4848ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:35,205 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 76
+INFO  2024-04-02 17:59:35,208 [18   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 17:59:35,210 [18   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 17:59:35,213 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Controllers.TokenAuthController.Authenticate (crud.Web.Core)'
+INFO  2024-04-02 17:59:35,229 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[crud.Models.TokenAuth.AuthenticateResultModel] Authenticate(crud.Models.TokenAuth.AuthenticateModel) on controller crud.Controllers.TokenAuthController (crud.Web.Core).
+INFO  2024-04-02 17:59:36,163 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:36,169 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Controllers.TokenAuthController.Authenticate (crud.Web.Core) in 937.1826ms
+INFO  2024-04-02 17:59:36,170 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Controllers.TokenAuthController.Authenticate (crud.Web.Core)'
+INFO  2024-04-02 17:59:36,172 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 968.7288ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:36,177 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 17:59:36,185 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.7384ms 200 text/html;charset=utf-8
+INFO  2024-04-02 17:59:36,193 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 17:59:36,195 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 17:59:36,198 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.3609ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 17:59:36,218 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.9667ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 17:59:36,269 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 17:59:36,307 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 17:59:36,314 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 17:59:36,316 [14   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 17:59:36,372 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:59:36,379 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 17:59:36,392 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:36,395 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 13.776ms
+INFO  2024-04-02 17:59:36,396 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 17:59:36,398 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 130.2894ms 200 application/json; charset=utf-8
+INFO  2024-04-02 17:59:36,410 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 103.6093ms 200 application/json;charset=utf-8
+INFO  2024-04-02 17:59:55,851 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/KhachHang/GetAllList  
+INFO  2024-04-02 17:59:55,857 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 17:59:55,861 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.GetAllList (crud.Application)'
+INFO  2024-04-02 17:59:55,875 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllList", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[crud.KhachHangs.DTO.GetKhachHangOutput]] GetAllList() on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 17:59:55,884 [18   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 17:59:56,260 [18   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 17:59:56,267 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.GetAllList (crud.Application) in 389.9901ms
+INFO  2024-04-02 17:59:56,269 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.GetAllList (crud.Application)'
+INFO  2024-04-02 17:59:56,271 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 420.6605ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:00:34,663 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2024-04-02 18:00:34,667 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:00:34,670 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:00:34,687 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[crud.Roles.Dto.RoleListDto]] GetRolesAsync(crud.Roles.Dto.GetRolesInput) on controller crud.Roles.RoleAppService (crud.Application).
+INFO  2024-04-02 18:00:35,178 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:00:35,210 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Roles.RoleAppService.GetRolesAsync (crud.Application) in 519.3612ms
+INFO  2024-04-02 18:00:35,213 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:00:35,216 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 553.8162ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:01:02,913 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 95
+INFO  2024-04-02 18:01:02,916 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:01:02,918 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:01:02,923 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:01:02,926 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:01:02,939 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:01:02,941 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:01:02,945 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:01:02,948 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 6.7246ms
+INFO  2024-04-02 18:01:02,950 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:01:02,953 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.0404ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:02:26,758 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 95
+INFO  2024-04-02 18:02:26,761 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:02:26,763 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:02:26,766 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:02:26,772 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:26,780 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:02:26,783 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:02:26,793 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:02:26,796 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 13.7218ms
+INFO  2024-04-02 18:02:26,799 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:26,801 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.8211ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:02:27,764 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 95
+INFO  2024-04-02 18:02:27,767 [33   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:02:27,769 [33   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:02:27,773 [33   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:02:27,775 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:27,784 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:02:27,786 [33   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:02:27,790 [33   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:02:27,793 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 6.613ms
+INFO  2024-04-02 18:02:27,795 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:27,798 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.9484ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:02:29,026 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 18:02:29,049 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.2915ms 200 text/html;charset=utf-8
+INFO  2024-04-02 18:02:29,063 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 18:02:29,065 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 18:02:29,068 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.9922ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 18:02:29,084 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.5141ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 18:02:29,232 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 18:02:29,236 [31   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:02:29,240 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:02:29,249 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 18:02:29,267 [31   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:02:29,270 [31   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 18.8226ms
+INFO  2024-04-02 18:02:29,272 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:02:29,275 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.5147ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:02:29,281 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 18:02:29,283 [31   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:02:29,309 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.6867ms 200 application/json;charset=utf-8
+INFO  2024-04-02 18:02:52,957 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 92
+INFO  2024-04-02 18:02:52,959 [33   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:02:52,962 [33   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:02:52,965 [33   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:02:52,968 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:52,976 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:02:52,978 [33   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:02:52,981 [33   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:02:52,984 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 5.8591ms
+INFO  2024-04-02 18:02:52,986 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:02:52,988 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 32.2168ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:03:06,778 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/KhachHang/Create  
+INFO  2024-04-02 18:03:06,786 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:03:06,788 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:03:06,791 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.2605ms 405 
+INFO  2024-04-02 18:03:41,762 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2024-04-02 18:03:41,767 [39   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:03:41,770 [39   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:03:41,779 [39   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[crud.Roles.Dto.RoleListDto]] GetRolesAsync(crud.Roles.Dto.GetRolesInput) on controller crud.Roles.RoleAppService (crud.Application).
+INFO  2024-04-02 18:03:41,839 [42   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:03:41,842 [42   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Roles.RoleAppService.GetRolesAsync (crud.Application) in 61.2492ms
+INFO  2024-04-02 18:03:41,844 [42   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:03:41,846 [42   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 85.6046ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:03:51,142 [43   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2024-04-02 18:03:51,150 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:03:51,160 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[crud.Roles.Dto.RoleListDto]] GetRolesAsync(crud.Roles.Dto.GetRolesInput) on controller crud.Roles.RoleAppService (crud.Application).
+WARN  2024-04-02 18:03:51,176 [36   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+INFO  2024-04-02 18:03:51,179 [36   ] c.Infrastructure.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2024-04-02 18:03:51,182 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:03:51,186 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Roles.RoleAppService.GetRolesAsync (crud.Application) in 23.6165ms
+INFO  2024-04-02 18:03:51,189 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:03:51,193 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.8143ms 401 application/json; charset=utf-8
+INFO  2024-04-02 18:03:51,233 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
+INFO  2024-04-02 18:03:51,237 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.6909ms 404 
+DEBUG 2024-04-02 18:12:13,845 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-04-02 18:12:13,912 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-04-02 18:12:13,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,936 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,936 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,936 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,937 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,937 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,937 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,937 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:13,940 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-04-02 18:12:14,029 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:12:14,030 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:12:14,030 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:12:14,030 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:12:14,441 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:12:15,526 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-04-02 18:12:15,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-04-02 18:12:15,593 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-04-02 18:12:15,602 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-04-02 18:12:15,611 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-04-02 18:12:15,988 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-04-02 18:12:16,167 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-04-02 18:12:16,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-04-02 18:12:16,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-04-02 18:12:16,253 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-04-02 18:12:16,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-04-02 18:12:16,255 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-04-02 18:12:16,255 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-04-02 18:12:16,255 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-04-02 18:12:16,256 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-04-02 18:12:16,256 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-04-02 18:12:16,256 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-04-02 18:12:19,115 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-04-02 18:12:19,391 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-04-02 18:12:19,466 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-04-02 18:12:19,675 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 18:12:25,356 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-04-02 18:12:27,131 [19   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-04-02 18:12:27,141 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1778.0818ms
+INFO  2024-04-02 18:12:27,144 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 18:12:27,169 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 18:12:27,171 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7703.8194ms 302 
+INFO  2024-04-02 18:12:27,267 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 98.0569ms 200 text/html;charset=utf-8
+INFO  2024-04-02 18:12:27,314 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 18:12:27,319 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 18:12:27,322 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.8436ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 18:12:27,369 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.3496ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 18:12:27,408 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 18:12:27,429 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.7213ms 404 
+INFO  2024-04-02 18:12:27,436 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 18:12:27,439 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.9074ms 404 
+INFO  2024-04-02 18:12:27,492 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 18:12:27,496 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.9163ms 404 
+INFO  2024-04-02 18:12:27,501 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 18:12:27,504 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.6127ms 404 
+INFO  2024-04-02 18:12:27,536 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 18:12:27,582 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 18:12:27,733 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:12:27,733 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:12:27,816 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:12:27,828 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 18:12:27,854 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:12:27,898 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 68.2839ms
+INFO  2024-04-02 18:12:27,900 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:12:27,902 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 366.9495ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:12:28,005 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 423.1589ms 200 application/json;charset=utf-8
+INFO  2024-04-02 18:12:55,755 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 94
+INFO  2024-04-02 18:12:55,760 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:12:55,762 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:12:55,768 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:12:55,771 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:12:55,798 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:12:55,811 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.ResolveInstanceOrNull(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:12:56,191 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:12:56,205 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 405.5963ms
+INFO  2024-04-02 18:12:56,207 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:12:56,209 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 455.8586ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:13:25,464 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DELETE http://localhost:21021/api/services/app/KhachHang/Delete?UserName=adc  
+INFO  2024-04-02 18:13:25,467 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:13:25,469 [19   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:13:25,477 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:13:25,482 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Delete (crud.Application)'
+INFO  2024-04-02 18:13:25,496 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Delete", controller = "KhachHang"}. Executing controller action with signature Void Delete(crud.KhachHangs.DTO.DeleteKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:13:25,498 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.ResolveInstanceOrNull(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:13:25,502 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:13:25,505 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Delete (crud.Application) in 6.7458ms
+INFO  2024-04-02 18:13:25,507 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Delete (crud.Application)'
+INFO  2024-04-02 18:13:25,509 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 46.3224ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:14:37,929 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/KhachHang/Delete?UserName=adc  
+INFO  2024-04-02 18:14:37,948 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:14:37,950 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:14:37,952 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.9054ms 405 
+DEBUG 2024-04-02 18:19:24,625 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-04-02 18:19:24,687 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2024-04-02 18:19:24,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.Web.Host.Startup.crudWebHostModule, crud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudWebCoreModule, crud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudApplicationModule, crud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.crudCoreModule, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: crud.EntityFrameworkCore.crudEntityFrameworkModule, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:24,729 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2024-04-02 18:19:24,802 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:19:24,802 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:19:24,802 [1    ] o.Configuration.LanguageManagementConfig - Converted crud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:19:24,802 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-04-02 18:19:25,228 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: crud.EntityFrameworkCore.crudDbContext, crud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-04-02 18:19:26,203 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-04-02 18:19:26,244 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-04-02 18:19:26,261 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-04-02 18:19:26,270 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: crud
+DEBUG 2024-04-02 18:19:26,278 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-04-02 18:19:26,608 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2024-04-02 18:19:26,822 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[crud.MultiTenancy.Tenant, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[crud.Authorization.Users.User, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-04-02 18:19:26,897 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2024-04-02 18:19:26,897 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2024-04-02 18:19:26,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.CreateUserDto
+DEBUG 2024-04-02 18:19:26,906 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Users.Dto.UserDto
+DEBUG 2024-04-02 18:19:26,906 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-04-02 18:19:26,907 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-04-02 18:19:26,907 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.Roles.Dto.PermissionDto
+DEBUG 2024-04-02 18:19:26,907 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-04-02 18:19:26,907 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.MultiTenancy.Dto.TenantDto
+DEBUG 2024-04-02 18:19:26,907 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - crud.KhachHangs.KhachHangDto
+INFO  2024-04-02 18:19:29,774 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2024-04-02 18:19:30,049 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2024-04-02 18:19:30,125 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2024-04-02 18:19:30,362 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 18:19:34,508 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller crud.Web.Host.Controllers.HomeController (crud.Web.Host).
+INFO  2024-04-02 18:19:35,900 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-04-02 18:19:35,908 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host) in 1393.9877ms
+INFO  2024-04-02 18:19:35,911 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.HomeController.Index (crud.Web.Host)'
+INFO  2024-04-02 18:19:35,931 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2024-04-02 18:19:35,934 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5807.7349ms 302 
+INFO  2024-04-02 18:19:36,017 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 85.6953ms 200 text/html;charset=utf-8
+INFO  2024-04-02 18:19:36,065 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2024-04-02 18:19:36,069 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2024-04-02 18:19:36,072 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.7188ms 200 application/javascript; charset=utf-8
+INFO  2024-04-02 18:19:36,119 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.6575ms 200 text/javascript; charset=UTF-8
+INFO  2024-04-02 18:19:36,154 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 18:19:36,175 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.3354ms 404 
+INFO  2024-04-02 18:19:36,182 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2024-04-02 18:19:36,185 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.2026ms 404 
+INFO  2024-04-02 18:19:36,237 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 18:19:36,240 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.7822ms 404 
+INFO  2024-04-02 18:19:36,245 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2024-04-02 18:19:36,248 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.7559ms 404 
+INFO  2024-04-02 18:19:36,283 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2024-04-02 18:19:36,329 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2024-04-02 18:19:36,479 [16   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:19:36,479 [11   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:19:36,551 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:19:36,563 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller crud.Web.Host.Controllers.AntiForgeryController (crud.Web.Host).
+INFO  2024-04-02 18:19:36,588 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:19:36,632 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host) in 66.0191ms
+INFO  2024-04-02 18:19:36,633 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Web.Host.Controllers.AntiForgeryController.SetCookie (crud.Web.Host)'
+INFO  2024-04-02 18:19:36,635 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 352.6298ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:19:36,710 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 380.9302ms 200 application/json;charset=utf-8
+INFO  2024-04-02 18:19:55,517 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/KhachHang/Create application/json-patch+json 93
+INFO  2024-04-02 18:19:55,523 [20   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-04-02 18:19:55,525 [20   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2024-04-02 18:19:55,531 [20   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:19:55,535 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:19:55,561 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "KhachHang"}. Executing controller action with signature System.Threading.Tasks.Task Create(crud.KhachHangs.DTO.CreateKhachHangInput) on controller crud.KhachHangs.KhachHangAppService (crud.Application).
+ERROR 2024-04-02 18:19:55,579 [20   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'crud.KhachHangs.KhachHangManager' as it has dependencies to be satisfied.
+
+'crud.KhachHangs.KhachHangManager' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[crud.KhachHangs.KhachHang, crud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, Arguments additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, Arguments arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, Arguments arguments)
+   at Castle.Windsor.WindsorContainer.Resolve(Type service)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.ResolveInstanceOrNull(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2024-04-02 18:19:55,975 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:19:55,988 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.KhachHangs.KhachHangAppService.Create (crud.Application) in 425.076ms
+INFO  2024-04-02 18:19:55,990 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.KhachHangs.KhachHangAppService.Create (crud.Application)'
+INFO  2024-04-02 18:19:55,992 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 476.9844ms 500 application/json; charset=utf-8
+INFO  2024-04-02 18:22:41,581 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2024-04-02 18:22:41,588 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2024-04-02 18:22:41,592 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:22:41,609 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[crud.Roles.Dto.RoleListDto]] GetRolesAsync(crud.Roles.Dto.GetRolesInput) on controller crud.Roles.RoleAppService (crud.Application).
+INFO  2024-04-02 18:22:42,269 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:22:42,286 [35   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Roles.RoleAppService.GetRolesAsync (crud.Application) in 675.5623ms
+INFO  2024-04-02 18:22:42,288 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:22:42,291 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 710.5917ms 200 application/json; charset=utf-8
+INFO  2024-04-02 18:22:48,208 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2024-04-02 18:22:48,227 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:22:48,235 [35   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[crud.Roles.Dto.RoleListDto]] GetRolesAsync(crud.Roles.Dto.GetRolesInput) on controller crud.Roles.RoleAppService (crud.Application).
+WARN  2024-04-02 18:22:48,245 [35   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+INFO  2024-04-02 18:22:48,249 [35   ] c.Infrastructure.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2024-04-02 18:22:48,251 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-04-02 18:22:48,257 [35   ] c.Infrastructure.ControllerActionInvoker - Executed action crud.Roles.RoleAppService.GetRolesAsync (crud.Application) in 20.0658ms
+INFO  2024-04-02 18:22:48,259 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'crud.Roles.RoleAppService.GetRolesAsync (crud.Application)'
+INFO  2024-04-02 18:22:48,262 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.106ms 401 application/json; charset=utf-8
+INFO  2024-04-02 18:22:48,552 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
+INFO  2024-04-02 18:22:48,557 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.6766ms 404 
+INFO  2024-04-02 18:22:53,113 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/KhachHang/Create  
+INFO  2024-04-02 18:22:53,128 [40   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:22:53,130 [40   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '405 HTTP Method Not Supported'
+INFO  2024-04-02 18:22:53,132 [40   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.3318ms 405 

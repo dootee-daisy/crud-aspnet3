@@ -9,11 +9,11 @@ using System.Linq;
 
 namespace crud.KhachHangs
 {
-    public class KhachHangAppservice : ApplicationService, IKhachHangAppService
+    public class KhachHangAppService : crudAppServiceBase, IKhachHangAppService
     {
-        private readonly IKhachHangManager _khachHangManager;
+        private readonly KhachHangManager _khachHangManager;
         private readonly IMapper _mapper;
-        public KhachHangAppservice(IKhachHangManager khachHangManager, IMapper mapper)
+        public KhachHangAppService(KhachHangManager khachHangManager, IMapper mapper)
         {
             _khachHangManager = khachHangManager;
             _mapper = mapper;

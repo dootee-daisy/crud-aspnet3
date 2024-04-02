@@ -1,4 +1,5 @@
-﻿using Abp.Application.Services;
+﻿using Abp;
+using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using Abp.Domain.Services;
 using Abp.UI;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace crud.KhachHangs
 {
-    public class KhachHangManager : DomainService, IKhachHangManager
+    public class KhachHangManager : IKhachHangManager
     {
         private readonly IRepository<KhachHang, string> _repository;
         public KhachHangManager(IRepository<KhachHang, string> repository)

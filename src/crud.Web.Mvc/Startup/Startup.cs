@@ -18,6 +18,8 @@ using Abp.Dependency;
 using Abp.Json;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json.Serialization;
+using Abp.Domain.Repositories;
+using crud.KhachHangs;
 
 
 namespace crud.Web.Startup
@@ -49,11 +51,11 @@ namespace crud.Web.Startup
                         NamingStrategy = new CamelCaseNamingStrategy()
                     };
                 });
-
             IdentityRegistrar.Register(services);
             AuthConfigurer.Configure(services, _appConfiguration);
 
             services.AddScoped<IWebResourceManager, WebResourceManager>();
+            services.AddScoped<IKhachHangManager, KhachHangManager>();
 
             services.AddSignalR();
 

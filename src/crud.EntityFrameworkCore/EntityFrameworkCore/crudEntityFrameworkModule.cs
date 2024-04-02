@@ -3,6 +3,7 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Zero.EntityFrameworkCore;
 using crud.EntityFrameworkCore.Seed;
+using crud.KhachHangs;
 
 namespace crud.EntityFrameworkCore
 {
