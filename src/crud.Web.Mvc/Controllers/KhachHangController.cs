@@ -17,12 +17,10 @@ namespace crud.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var listKhachHang = await _khachHangAppservice.GetAllList();
-            var model = listKhachHang.Select(kh => new KhachHangViewModel
+            var model = new KhachHangViewModel
             {
-                UserName = kh.UserName,
-                DisplayName = kh.DisplayName,
-                Age = kh.Age,
-            }).ToList();
+                KhachHangs = listKhachHang.ToList()
+            };
             return View(model);
         }
     }

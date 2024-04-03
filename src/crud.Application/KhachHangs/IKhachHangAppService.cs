@@ -12,8 +12,8 @@ namespace crud.KhachHangs
         Task <GetKhachHangOutput> GetKhachHangByUserName(GetKhachHangInput input);
         Task<IEnumerable<GetKhachHangOutput>> GetAllList();
         Task<KhachHang> Create(CreateKhachHangInput input);
-        void Update(UpdateKhachHangInput input);
-        void Delete(DeleteKhachHangInput input);
+        Task Update(UpdateKhachHangInput input);
+        Task Delete(DeleteKhachHangInput input);
 
     }
 }

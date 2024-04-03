@@ -15,6 +15,14 @@ namespace crud.Web.Startup
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
+                        PageNames.KhachHang,
+                        L("KhachHang"),
+                        url: "KhachHang",
+                        icon: "fas fa-users",
+                        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_KhachHang)
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         PageNames.Home,
                         L("HomePage"),
                         url: "",

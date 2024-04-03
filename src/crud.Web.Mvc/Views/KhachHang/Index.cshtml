@@ -1,25 +1,21 @@
 ﻿@using crud.Web.Startup
-@using crud.Web.Models.Users
-@model UserListViewModel
+@using crud.Web.Models.KhachHang
+@model KhachHangViewModel
 @{
     ViewBag.Title = L("Khách Hàng");
     ViewBag.CurrentPageName = PageNames.KhachHang;
 }
 @section scripts
 {
-    <environment names="Development">
-        <script src="~/view-resources/Views/KhachHangs/Index.js" asp-append-version="true"></script>
-    </environment>
 
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/KhachHangs/Index.min.js" asp-append-version="true"></script>
-    </environment>
+        <script src="~/view-resources/Views/KhachHangs/Index.js" asp-append-version="true"></script>
+
 }
 <section class="content-header">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <h1>@L("Kháchh Hàng")</h1>
+                <h1>@L("KhachHang")</h1>
             </div>
             <div class="col-sm-6">
                 <a href="javascript:;" data-toggle="modal" data-target="#KhachHangCreateModal" class="btn bg-blue float-sm-right">
@@ -51,8 +47,8 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th>@L("User Name")</th>
-                                        <th>@L("Display Name")</th>
+                                        <th>@L("UserName")</th>
+                                        <th>@L("DisplayName")</th>
                                         <th>@L("Age")</th>
                                         <th style="width: 150px">@L("Actions")</th>
                                     </tr>
@@ -67,9 +63,9 @@
     </div>
 </section>
 
-@await Html.PartialAsync("~/Views/Users/_CreateModal.cshtml", Model)
+@await Html.PartialAsync("~/Views/KhachHang/_CreateModal.cshtml", Model)
 
-<div class="modal fade" id="UserEditModal" tabindex="-1" role="dialog" aria-labelledby="UserEditModalLabel" data-backdrop="static">
+<div class="modal fade" id="UserEditModal" tabindex="-1" role="dialog" aria-labelledby="KhachHangEditModalLabel" data-backdrop="static">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
         </div>
