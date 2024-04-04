@@ -4,21 +4,17 @@
         _$modal = $('#KhachHangCreateModal'),
         _$form = _$modal.find('form'),
         _$table = $('#KhachHangsTable');
-
     var _$khachHangsTable = _$table.DataTable({
         paging: true,
         serverSide: true,
         ajax: function (data, callback, settings) {
-            var filter = $('#KhachHangsSearchForm').serializeFormToObject(true);
+            /*var filter = $('#KhachHangsSearchForm').serializeFormToObject(true);
             filter.maxResultCount = data.length;
-            filter.skipCount = data.start;
-
+            filter.skipCount = data.start;*/
             abp.ui.setBusy(_$table);
-            _khachHangService.getAll(filter).done(function (result) {
+            _khachHangService.getAllList().done(function (result) {
                 callback({
-                    recordsTotal: result.totalCount,
-                    recordsFiltered: result.totalCount,
-                    data: result.items
+                    data: result,
                 });
             }).always(function () {
                 abp.ui.clearBusy(_$table);
@@ -44,17 +40,17 @@
             },
             {
                 targets: 1,
-                data: 'UserName',
+                data: 'userName',
                 sortable: false
             },
             {
                 targets: 2,
-                data: 'DisplayName',
+                data: 'displayName',
                 sortable: false
             },
             {
                 targets: 3,
-                data: 'Age',
+                data: 'age',
                 sortable: false
             },
             {
@@ -65,10 +61,10 @@
                 defaultContent: '',
                 render: (data, type, row, meta) => {
                     return [
-                        `   <button type="button" class="btn btn-sm bg-secondary edit-khachHang" data-khachHang-userName="${row.userName}" data-toggle="modal" data-target="#KhachHangEditModal">`,
+                        `   <button type="button" class="btn btn-sm bg-secondary edit-khachHang" data-khachhang-username="${row.userName}" data-toggle="modal" data-target="#KhachHangEditModal">`,
                         `       <i class="fas fa-pencil-alt"></i> ${l('Edit')}`,
                         '   </button>',
-                        `   <button type="button" class="btn btn-sm bg-danger delete-khachHang" data-khachHang-id="${row.userName}" data-khachHang-displayName="${row.displayName}">`,
+                        `   <button type="button" class="btn btn-sm bg-danger delete-khachHang" data-khachHang-username="${row.userName}" data-khachhang-displayname="${row.displayName}">`,
                         `       <i class="fas fa-trash"></i> ${l('Delete')}`,
                         '   </button>'
                     ].join('');
@@ -77,26 +73,29 @@
         ]
     });
 
-    /*_$form.validate({
+    _$form.validate({
         rules: {
             Password: "required",
             ConfirmPassword: {
                 equalTo: "#Password"
             }
         }
-    });*/
+    });
 
     _$form.find('.save-button').on('click', (e) => {
         e.preventDefault();
-
         if (!_$form.valid()) {
             return;
         }
 
-        var khachHang = _$form.serializeFormToObject();
-        
         abp.ui.setBusy(_$modal);
-        _khachHangService.create(user).done(function () {
+        var newKhachHang = {
+             userName: $("#username").val(),
+             displayName : $("#displayname").val(),
+             age : $("#age").val(),
+        };
+        
+        _khachHangService.create(newKhachHang).done(function () {
             _$modal.modal('hide');
             _$form[0].reset();
             abp.notify.info(l('SavedSuccessfully'));
@@ -107,9 +106,8 @@
     });
 
     $(document).on('click', '.delete-khachHang', function () {
-        var userName = $(this).attr("data-khachHang-userName");
-        var displayName = $(this).attr('data-khachHang-displayName');
-
+        var userName = $(this).attr("data-khachhang-username");
+        var displayName = $(this).attr('data-khachhang-displayname');
         deleteKhachHang(userName, displayName);
     });
 
@@ -121,22 +119,22 @@
             null,
             (isConfirmed) => {
                 if (isConfirmed) {
-                    _khachHangService.delete({
-                        userName: userName
-                    }).done(() => {
+                    _khachHangService.delete({userName: userName }).done(() => {
                         abp.notify.info(l('SuccessfullyDeleted'));
-                        _$usersTable.ajax.reload();
+                        _$khachHangsTable.ajax.reload();
                     });
                 }
             }
         );
     }
-
     $(document).on('click', '.edit-khachHang', function (e) {
-        var userName = $(this).attr("data-khachHang-userName");
-
+        var userName = $(this).attr("data-khachhang-username");
+        console.log(userName);
         e.preventDefault();
-        abp.ajax({
+        _khachHangService.getKhachHangByUserName({ userName: userName }).done((result) => {
+            console.log(result)
+        })
+        /*abp.ajax({
             url: abp.appPath + 'KhachHang/EditModal?userName=' + userName,
             type: 'POST',
             dataType: 'html',
@@ -144,12 +142,12 @@
                 $('#KhachHangEditModal div.modal-content').html(content);
             },
             error: function (e) { }
-        });
+        });*/
     });
 
-    $(document).on('click', 'a[data-target="#KhachHangCreateModal"]', (e) => {
+   /* $(document).on('click', 'a[data-target="#KhachHangCreateModal"]', (e) => {
         $('.nav-tabs a[href="#khachhang-details"]').tab('show')
-    });
+    });*/
 
     abp.event.on('khachHang.edited', (data) => {
         _$khachHangsTable.ajax.reload();

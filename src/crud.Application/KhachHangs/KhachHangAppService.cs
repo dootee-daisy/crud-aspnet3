@@ -59,6 +59,7 @@ namespace crud.KhachHangs
             var getAll = await _khachHangRepository.GetAllListAsync();
             List<GetKhachHangOutput> output = getAll.Select(o => new GetKhachHangOutput
             {
+                Id= o.Id,
                 UserName = o.UserName,
                 DisplayName = o.DisplayName,
                 Age = o.Age,
@@ -72,6 +73,7 @@ namespace crud.KhachHangs
             if (isExist == null) throw new UserFriendlyException("Can't find UserName");
             GetKhachHangOutput khachHang = new GetKhachHangOutput
             {
+                Id = isExist.Id,
                 UserName = isExist.UserName,
                 DisplayName = isExist.DisplayName,
                 Age = isExist.Age,

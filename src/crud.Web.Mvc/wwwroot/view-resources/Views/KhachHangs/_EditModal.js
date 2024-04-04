@@ -1,10 +1,10 @@
 ﻿(function ($) {
-    var _userService = abp.services.app.user,
+    var _userService = abp.services.app.khachHang,
         l = abp.localization.getSource('crud'),
-        _$modal = $('#UserEditModal'),
+        _$modal = $('#KhachHangEditModal'),
         _$form = _$modal.find('form');
 
-    function save() {
+    /*function save() {
         if (!_$form.valid()) {
             return;
         }
@@ -43,5 +43,5 @@
 
     _$modal.on('shown.bs.modal', function () {
         _$form.find('input[type=text]:first').focus();
-    });
+    });*/
 })(jQuery);
