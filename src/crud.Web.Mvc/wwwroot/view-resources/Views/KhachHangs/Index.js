@@ -129,23 +129,19 @@
     }
     $(document).on('click', '.edit-khachHang', function (e) {
         var userName = $(this).attr("data-khachhang-username");
-        console.log(userName);
         e.preventDefault();
-        _khachHangService.getKhachHangByUserName({ userName: userName }).done((result) => {
-            console.log(result)
-        })
-        /*abp.ajax({
+        abp.ajax({
             url: abp.appPath + 'KhachHang/EditModal?userName=' + userName,
             type: 'POST',
             dataType: 'html',
-            success: function (content) {
+            success: (content) => {
                 $('#KhachHangEditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });*/
+            }
+        })
+       
     });
 
-   /* $(document).on('click', 'a[data-target="#KhachHangCreateModal"]', (e) => {
+    /*$(document).on('click', 'a[data-target="#KhachHangCreateModal"]', (e) => {
         $('.nav-tabs a[href="#khachhang-details"]').tab('show')
     });*/
 

@@ -54,12 +54,11 @@ namespace crud.KhachHangs
             await _khachHangRepository.DeleteAsync(khachHang);
         }
         [AbpAllowAnonymous]
-        public async Task<IEnumerable<GetKhachHangOutput>> GetAllList()
+        public async Task<IEnumerable<KhachHangDto>> GetAllList()
         {
             var getAll = await _khachHangRepository.GetAllListAsync();
-            List<GetKhachHangOutput> output = getAll.Select(o => new GetKhachHangOutput
+            List<KhachHangDto> output = getAll.Select(o => new KhachHangDto
             {
-                Id= o.Id,
                 UserName = o.UserName,
                 DisplayName = o.DisplayName,
                 Age = o.Age,
@@ -67,13 +66,12 @@ namespace crud.KhachHangs
             return output;
         }
         [AbpAllowAnonymous]
-        public async Task<GetKhachHangOutput> GetKhachHangByUserName(GetKhachHangInput input)
+        public async Task<KhachHangDto> GetKhachHangByUserName(GetKhachHangInput input)
         {
             var isExist = await _khachHangRepository.FirstOrDefaultAsync(o => o.UserName == input.UserName);
             if (isExist == null) throw new UserFriendlyException("Can't find UserName");
-            GetKhachHangOutput khachHang = new GetKhachHangOutput
+            KhachHangDto khachHang = new KhachHangDto
             {
-                Id = isExist.Id,
                 UserName = isExist.UserName,
                 DisplayName = isExist.DisplayName,
                 Age = isExist.Age,

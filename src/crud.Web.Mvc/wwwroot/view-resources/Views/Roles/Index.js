@@ -112,7 +112,7 @@
 
     $(document).on('click', '.edit-role', function (e) {
         var roleId = $(this).attr("data-role-id");
-
+        debugger;
         e.preventDefault();
         abp.ajax({
             url: abp.appPath + 'Roles/EditModal?roleId=' + roleId,

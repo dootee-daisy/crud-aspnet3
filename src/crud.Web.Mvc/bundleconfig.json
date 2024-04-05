@@ -140,11 +140,5 @@
     "inputFiles": [
       "wwwroot/view-resources/Views/KhachHangs/Index.js"
     ]
-  },
-  {
-    "outputFileName": "wwwroot/view-resources/Views/KhachHangs/_EditModal.min.js",
-    "inputFiles": [
-      "wwwroot/view-resources/Views/KhachHangs/_EditModal.js"
-    ]
   }
 ]

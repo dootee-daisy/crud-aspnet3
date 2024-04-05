@@ -1,29 +1,19 @@
 ﻿(function ($) {
-    var _userService = abp.services.app.khachHang,
+    debugger
+    var _khachHangService = abp.services.app.khachHang,
         l = abp.localization.getSource('crud'),
         _$modal = $('#KhachHangEditModal'),
         _$form = _$modal.find('form');
-
-    /*function save() {
+    function save() {
         if (!_$form.valid()) {
             return;
         }
-
-        var user = _$form.serializeFormToObject();
-        user.roleNames = [];
-        var _$roleCheckboxes = _$form[0].querySelectorAll("input[name='role']:checked");
-        if (_$roleCheckboxes) {
-            for (var roleIndex = 0; roleIndex < _$roleCheckboxes.length; roleIndex++) {
-                var _$roleCheckbox = $(_$roleCheckboxes[roleIndex]);
-                user.roleNames.push(_$roleCheckbox.val());
-            }
-        }
-
+        var khachHang = _$form.serializeFormToObject();
         abp.ui.setBusy(_$form);
-        _userService.update(user).done(function () {
+        _khachHangService.update(khachHang).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
-            abp.event.trigger('user.edited', user);
+            abp.event.trigger('khachhang.edited', khachHang);
         }).always(function () {
             abp.ui.clearBusy(_$form);
         });
@@ -40,8 +30,4 @@
             save();
         }
     });
-
-    _$modal.on('shown.bs.modal', function () {
-        _$form.find('input[type=text]:first').focus();
-    });*/
 })(jQuery);
