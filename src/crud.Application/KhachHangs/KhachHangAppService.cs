@@ -22,6 +22,15 @@ namespace crud.KhachHangs
             _khachHangRepository = khachHangRepository;
 
         }
+        public DateTime formatDate(DateTime date)
+        {
+            var nsf = date.ToString().Split('/');
+            var day = int.Parse(nsf[0]);
+            var month = int.Parse(nsf[1]);
+            int spaceIndex = nsf[2].IndexOf(" ");
+            int year = int.Parse(spaceIndex != -1 ? nsf[2].Substring(0, spaceIndex) : nsf[2]);
+            return new DateTime(year, month, day);
+        }
         [AbpAllowAnonymous]
         public async Task<KhachHang> Create(CreateKhachHangInput input)
         {
@@ -33,7 +42,7 @@ namespace crud.KhachHangs
                 {
                     UserName = input.UserName,
                     DisplayName = input.DisplayName,
-                    NgaySinh = input.NgaySinh,
+                    NgaySinh = formatDate(input.NgaySinh),
                     CreationTime = input.CreationTime,
                 };
                 try
@@ -91,7 +100,7 @@ namespace crud.KhachHangs
                 throw new UserFriendlyException("User name does'n exist, cant't update!");
             }
             khachHang.DisplayName = input.DisplayName;
-            khachHang.NgaySinh = input.NgaySinh;
+            khachHang.NgaySinh = formatDate(input.NgaySinh);
             await _khachHangRepository.UpdateAsync(khachHang);
         }
 

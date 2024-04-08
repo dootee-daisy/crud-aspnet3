@@ -96,9 +96,9 @@
 
         abp.ui.setBusy(_$modal);
         var newKhachHang = {
-             userName: $("#username").val(),
-             displayName : $("#displayname").val(),
-             age : $("#age").val(),
+            userName: _$form.find("#username").val(),
+            displayName: _$form.find("#displayname").val(),
+            ngaySinh: _$form.find("#ngaySinh").val(),
         };
         
         _khachHangService.create(newKhachHang).done(function () {
@@ -171,5 +171,10 @@
             return false;
         }
     });
+    _$form.find("#ngaySinh").datepicker({
+        dateFormat: "dd/mm/yy"
+    });
+    
+
         
 })(jQuery);
