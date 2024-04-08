@@ -8,13 +8,13 @@
             return;
         }
         var khachHang = _$form.serializeFormToObject();
-;        abp.ui.setBusy(_$form);
+        abp.ui.setBusy(_$modal);
         _khachHangService.update(khachHang).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
             abp.event.trigger('khachHang.edited', khachHang);
         }).always(function () {
-            abp.ui.clearBusy(_$form);
+            abp.ui.clearBusy(_$modal);
         });
     }
 
@@ -29,6 +29,7 @@
             save();
         }
     });
-    _$form.find("#ngaySinh").datepicker({ dateFormat: "dd/mm/yy" });
-    _$form.find('#ngaySinh').datepicker('setDate', new Date());
+    _$form.find("#ngaySinh-edit").datepicker({
+        dateFormat: "dd/mm/yy"
+    });
 })(jQuery);
