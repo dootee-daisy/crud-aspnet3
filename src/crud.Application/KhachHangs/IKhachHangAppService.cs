@@ -10,7 +10,7 @@ namespace crud.KhachHangs
     public interface IKhachHangAppService : IApplicationService
     {
         Task <KhachHangDto> GetKhachHangByUserName(GetKhachHangInput input);
-        Task<IEnumerable<KhachHangDto>> GetAllList();
+        Task<IEnumerable<KhachHangDto>> GetAllList(string search = null);
         Task<KhachHang> Create(CreateKhachHangInput input);
         Task Update(UpdateKhachHangInput input);
         Task Delete(DeleteKhachHangInput input);

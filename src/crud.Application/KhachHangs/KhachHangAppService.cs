@@ -54,9 +54,13 @@ namespace crud.KhachHangs
             await _khachHangRepository.DeleteAsync(khachHang);
         }
         [AbpAllowAnonymous]
-        public async Task<IEnumerable<KhachHangDto>> GetAllList()
+        public async Task<IEnumerable<KhachHangDto>> GetAllList(string search = null)
         {
             var getAll = await _khachHangRepository.GetAllListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                getAll = getAll.Where(o => (o.UserName.Contains(search) || o.DisplayName.Contains(search))).ToList();
+            }
             List<KhachHangDto> output = getAll.Select(o => new KhachHangDto
             {
                 UserName = o.UserName,

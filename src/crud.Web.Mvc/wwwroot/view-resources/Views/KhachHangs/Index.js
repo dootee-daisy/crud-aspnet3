@@ -8,11 +8,9 @@
         paging: true,
         serverSide: true,
         ajax: function (data, callback, settings) {
-            /*var filter = $('#KhachHangsSearchForm').serializeFormToObject(true);
-            filter.maxResultCount = data.length;
-            filter.skipCount = data.start;*/
+            var filter = $('#KhachHangsSearchForm').serializeFormToObject(true);
             abp.ui.setBusy(_$table);
-            _khachHangService.getAllList().done(function (result) {
+            _khachHangService.getAllList(filter.keyword).done(function (result) {
                 callback({
                     data: result,
                 });

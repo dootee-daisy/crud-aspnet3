@@ -1,5 +1,4 @@
 ﻿(function ($) {
-    debugger
     var _khachHangService = abp.services.app.khachHang,
         l = abp.localization.getSource('crud'),
         _$modal = $('#KhachHangEditModal'),
@@ -8,12 +7,13 @@
         if (!_$form.valid()) {
             return;
         }
+        debugger
         var khachHang = _$form.serializeFormToObject();
         abp.ui.setBusy(_$form);
         _khachHangService.update(khachHang).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
-            abp.event.trigger('khachhang.edited', khachHang);
+            abp.event.trigger('khachHang.edited', khachHang);
         }).always(function () {
             abp.ui.clearBusy(_$form);
         });
