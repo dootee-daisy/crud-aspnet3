@@ -5,10 +5,12 @@
     ViewBag.Title = L("Khách Hàng");
     ViewBag.CurrentPageName = PageNames.KhachHang;
 }
+
 @section scripts
 {
-        <script src="~/view-resources/Views/KhachHangs/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/KhachHangs/Index.js" asp-append-version="true"></script> 
 }
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row">
@@ -47,7 +49,7 @@
                                         <th></th>
                                         <th>@L("UserName")</th>
                                         <th>@L("DisplayName")</th>
-                                        <th>@L("Age")</th>
+                                        <th>Ngày sinh</th>
                                         <th style="width: 150px">@L("Actions")</th>
                                     </tr>
                                 </thead>
@@ -68,3 +70,7 @@
         </div>
     </div>
 </div>
+ 
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

@@ -1,6 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Entities.Auditing;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace crud.KhachHangs
@@ -10,6 +12,6 @@ namespace crud.KhachHangs
     {
         public string UserName {  get; set; }
         public string DisplayName { get; set; }
-        public int Age { get; set; }
+        public DateTime NgaySinh { get; set; }
     }
 }

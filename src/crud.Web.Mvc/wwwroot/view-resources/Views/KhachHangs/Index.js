@@ -48,8 +48,11 @@
             },
             {
                 targets: 3,
-                data: 'age',
-                sortable: false
+                data: 'ngaySinh',
+                sortable: false,
+                render: (data) => {
+                    return formatDate(data);
+                }
             },
             {
                 targets: 4,
@@ -70,6 +73,11 @@
             }
         ]
     });
+    var formatDate = (data) => {
+        if (!data) return;
+        const date = new Date(data);
+        return ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
+    }
 
     _$form.validate({
         rules: {
@@ -163,4 +171,5 @@
             return false;
         }
     });
+        
 })(jQuery);

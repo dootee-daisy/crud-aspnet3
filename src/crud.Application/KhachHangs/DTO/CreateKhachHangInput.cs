@@ -12,7 +12,7 @@ namespace crud.KhachHangs.DTO
         [Required]
         public string DisplayName { get; set; }
         [Required]
-        public int Age { get; set; }
+        public DateTime NgaySinh { get; set; }
         public DateTime CreationTime { get; set; }
 
     }

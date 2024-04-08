@@ -7,9 +7,10 @@
         if (!_$form.valid()) {
             return;
         }
-        debugger
         var khachHang = _$form.serializeFormToObject();
-        abp.ui.setBusy(_$form);
+        var ngaySinhFormat = khachHang.NgaySinh.split('/');
+        khachHang.NgaySinh = ngaySinhFormat[1] + '/' + ngaySinhFormat[0] + '/' + ngaySinhFormat[2];
+;        abp.ui.setBusy(_$form);
         _khachHangService.update(khachHang).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
@@ -30,4 +31,11 @@
             save();
         }
     });
+    $(() => {
+        $(".datepicker").datepicker({});
+    })
+    $(".datepicker").change(() => {
+        startDate = $(this).datepicker('getDate');
+    })
+
 })(jQuery);

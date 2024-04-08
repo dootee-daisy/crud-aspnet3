@@ -33,7 +33,7 @@ namespace crud.KhachHangs
                 {
                     UserName = input.UserName,
                     DisplayName = input.DisplayName,
-                    Age = input.Age,
+                    NgaySinh = input.NgaySinh,
                     CreationTime = input.CreationTime,
                 };
                 try
@@ -65,7 +65,7 @@ namespace crud.KhachHangs
             {
                 UserName = o.UserName,
                 DisplayName = o.DisplayName,
-                Age = o.Age,
+                NgaySinh = o.NgaySinh,
             }).ToList();
             return output;
         }
@@ -78,7 +78,7 @@ namespace crud.KhachHangs
             {
                 UserName = isExist.UserName,
                 DisplayName = isExist.DisplayName,
-                Age = isExist.Age,
+                NgaySinh = isExist.NgaySinh,
             };
             return khachHang;
         }
@@ -91,8 +91,7 @@ namespace crud.KhachHangs
                 throw new UserFriendlyException("User name does'n exist, cant't update!");
             }
             khachHang.DisplayName = input.DisplayName;
-            khachHang.Age = input.Age;
-            khachHang.LastModifierUserId = input.LastModifierUserId;
+            khachHang.NgaySinh = input.NgaySinh;
             await _khachHangRepository.UpdateAsync(khachHang);
         }
 
