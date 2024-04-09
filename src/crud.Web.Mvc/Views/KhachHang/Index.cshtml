@@ -2,7 +2,7 @@
 @using crud.Web.Models.KhachHang
 @model KhachHangViewModel
 @{
-    ViewBag.Title = L("Khách Hàng");
+    ViewBag.Title = "Customer";
     ViewBag.CurrentPageName = PageNames.KhachHang;
 }
 
@@ -33,10 +33,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-6">
-                                <!--Use for bulk actions-->
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col">
                                 @await Html.PartialAsync("~/Views/KhachHang/Index.AdvancedSearch.cshtml")
                             </div>
                         </div>

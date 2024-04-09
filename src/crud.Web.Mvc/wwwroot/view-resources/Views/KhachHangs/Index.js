@@ -9,9 +9,20 @@
         serverSide: true,
         ajax: function (data, callback, settings) {
             var filter = $('#KhachHangsSearchForm').serializeFormToObject(true);
+            filter.maxResultCount = data.length;
+            filter.skipCount = data.start;
+            if (filter.date) {
+                var splitTime = filter.date.split("-");
+                var startTime = splitTime[0].trim().split("/");
+                var endTime = splitTime[1].trim().split("/");
+                filter.startTime = startTime[1] + "/" + startTime[0] + "/" + startTime[2];
+                filter.endTime = endTime[1] + "/" + endTime[0] + "/" + endTime[2];
+            }
             abp.ui.setBusy(_$table);
-            _khachHangService.getAllList(filter.keyword).done(function (result) {
+            _khachHangService.getAllList(filter).done(function (result) {
                 callback({
+                    recordsTotal: result.totalCount,
+                    recordsFiltered: result.totalCount,
                     data: result,
                 });
             }).always(function () {
@@ -51,7 +62,8 @@
                 data: 'ngaySinh',
                 sortable: false,
                 render: (data) => {
-                    return formatDate(data);
+                    const date = new Date(data);
+                    return ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
                 }
             },
             {
@@ -73,12 +85,6 @@
             }
         ]
     });
-    var formatDate = (data) => {
-        if (!data) return;
-        const date = new Date(data);
-        return ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
-    }
-
     _$form.validate({
         rules: {
             Password: "required",
@@ -95,10 +101,11 @@
         }
 
         abp.ui.setBusy(_$modal);
+        var dateParts = _$form.find("#ngaySinh").val().split("/");
         var newKhachHang = {
-            userName: _$form.find("#username").val(),
-            displayName: _$form.find("#displayname").val(),
-            ngaySinh: _$form.find("#ngaySinh").val(),
+            UserName: _$form.find("#username").val(),
+            DisplayName: _$form.find("#displayname").val(),
+            NgaySinh: dateParts[1] + "/" + dateParts[0] + "/" + dateParts[2],
         };
         
         _khachHangService.create(newKhachHang).done(function () {
@@ -174,7 +181,25 @@
     _$form.find("#ngaySinh").datepicker({
         dateFormat: "dd/mm/yy"
     });
-    
+    $("#date-search").daterangepicker({
+        opens: 'right',
+        autoUpdateInput: false,
+        locale: {
+            format: "DD/MM/YYYY"
+        }
+    });
+    $("#date-search").on("apply.daterangepicker", function (ev, picker) {
+        $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+    });
+    $("#date-search").on("cancel.daterangepicker", function (ev, picker) {
+        $(this).val('');
+    });
+    $("#date-search").on("keydown", (e) => {
+        e.preventDefault();
+    })
+    _$form.find("#ngaySinh").on("keydown", (e) => {
+        e.preventDefault();
+    })
 
         
 })(jQuery);

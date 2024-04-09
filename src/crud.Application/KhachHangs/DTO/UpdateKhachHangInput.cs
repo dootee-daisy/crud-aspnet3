@@ -9,7 +9,6 @@ namespace crud.KhachHangs.DTO
         public string UserName {  get; set; }
         public string DisplayName { get; set; }
         public DateTime NgaySinh { get; set; }
-        public long? LastModifierUserId { get; set; }
 
     }
 }

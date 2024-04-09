@@ -7,18 +7,21 @@
         if (!_$form.valid()) {
             return;
         }
+        debugger
         var khachHang = _$form.serializeFormToObject();
-        abp.ui.setBusy(_$modal);
+        var ngaySinh = khachHang.NgaySinh.split("/");
+        khachHang.NgaySinh = ngaySinh[1] + "/" + ngaySinh[0] + "/" + ngaySinh[2];
+        abp.ui.setBusy(_$form);
         _khachHangService.update(khachHang).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
             abp.event.trigger('khachHang.edited', khachHang);
         }).always(function () {
-            abp.ui.clearBusy(_$modal);
+            abp.ui.clearBusy(_$form);
         });
     }
 
-    _$form.closest('div.modal-content').find(".save-button").click(function (e) {
+    _$form.closest('div.modal-content').find(".save-button").on('click', function (e) {
         e.preventDefault();
         save();
     });

@@ -10,6 +10,9 @@ using Abp.UI;
 using Abp.Authorization;
 using crud.Authorization;
 using Abp.ObjectMapping;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Dynamic.Core;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace crud.KhachHangs
 {
@@ -22,15 +25,6 @@ namespace crud.KhachHangs
             _khachHangRepository = khachHangRepository;
 
         }
-        public DateTime formatDate(DateTime date)
-        {
-            var nsf = date.ToString().Split('/');
-            var day = int.Parse(nsf[0]);
-            var month = int.Parse(nsf[1]);
-            int spaceIndex = nsf[2].IndexOf(" ");
-            int year = int.Parse(spaceIndex != -1 ? nsf[2].Substring(0, spaceIndex) : nsf[2]);
-            return new DateTime(year, month, day);
-        }
         [AbpAllowAnonymous]
         public async Task<KhachHang> Create(CreateKhachHangInput input)
         {
@@ -42,8 +36,7 @@ namespace crud.KhachHangs
                 {
                     UserName = input.UserName,
                     DisplayName = input.DisplayName,
-                    NgaySinh = formatDate(input.NgaySinh),
-                    CreationTime = input.CreationTime,
+                    NgaySinh = input.NgaySinh,
                 };
                 try
                 {
@@ -63,19 +56,29 @@ namespace crud.KhachHangs
             await _khachHangRepository.DeleteAsync(khachHang);
         }
         [AbpAllowAnonymous]
-        public async Task<IEnumerable<KhachHangDto>> GetAllList(string search = null)
+        public async Task<List<KhachHangDto>> GetAllList(SearchKhachHangInput search = null)
         {
-            var getAll = await _khachHangRepository.GetAllListAsync();
-            if (!string.IsNullOrEmpty(search))
+            var getAll =  _khachHangRepository.GetAll();
+            if (search != null)
             {
-                getAll = getAll.Where(o => (o.UserName.Contains(search) || o.DisplayName.Contains(search))).ToList();
+                if (search.keyword != null)
+                {
+                    getAll = getAll.Where(o => o.UserName.Contains(search.keyword) || o.DisplayName.Contains(search.keyword));
+                }
+                if (search.startTime != null && search.endTime != null)
+                {
+                    DateTime startTime = (DateTime)search.startTime;
+                    DateTime endTime = (DateTime)search.endTime;
+;                   getAll = getAll.Where(o => o.NgaySinh >= startTime && o.NgaySinh <= endTime);
+                }
+                getAll = getAll.Skip((int)search.skipCount).Take((int)search.maxResultCount);
             }
-            List<KhachHangDto> output = getAll.Select(o => new KhachHangDto
+            List<KhachHangDto> output = await getAll.Select(o => new KhachHangDto
             {
                 UserName = o.UserName,
                 DisplayName = o.DisplayName,
                 NgaySinh = o.NgaySinh,
-            }).ToList();
+            }).ToListAsync();
             return output;
         }
         [AbpAllowAnonymous]
@@ -100,7 +103,7 @@ namespace crud.KhachHangs
                 throw new UserFriendlyException("User name does'n exist, cant't update!");
             }
             khachHang.DisplayName = input.DisplayName;
-            khachHang.NgaySinh = formatDate(input.NgaySinh);
+            khachHang.NgaySinh = input.NgaySinh;
             await _khachHangRepository.UpdateAsync(khachHang);
         }
 
